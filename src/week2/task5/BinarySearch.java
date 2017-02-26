@@ -8,15 +8,29 @@ package week2.task5;
 public class BinarySearch {
     public static void main(String[] args) {
 
-        int data[] = { 3, 6, 7, 10, 34, 56, 60 };
+        int data[] = {3, 6, 7, 10, 34, 56, 60};
         int numberToFind = 10;
 
         // PUT YOUR CODE HERE
-        for (int i = data.length / 2; i > 0;) {
-            if (data[i] > numberToFind) {
+        int lower = 0;
+        int upper = data.length - 1;
 
+        while (lower <= upper) {
+
+            int middle = (upper + lower) / 2;
+
+            if (data[middle] == numberToFind) {
+                System.out.println(middle);
+                break;
+            } else if (data[middle] < numberToFind) {
+                lower = middle + 1;
+            } else if (data[middle] > numberToFind) {
+                upper = middle - 1;
             }
         }
         // PUT YOUR CODE HERE
+        if (lower > upper) {
+            System.out.println(-1);
+        }
     }
 }
