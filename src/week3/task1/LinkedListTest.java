@@ -1,14 +1,14 @@
 package week3.task1;
 
-/**
- * Created by Vladik on 20.04.2017.
- */
 public class LinkedListTest {
     LinkedList list = new LinkedList();
 
     @org.junit.Test
     public void add() throws Exception {
-
+        list.add(5);
+        list.add(6);
+        list.add(7);
+        list.add(8);
     }
 
     @org.junit.Test
