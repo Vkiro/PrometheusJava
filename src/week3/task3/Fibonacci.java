@@ -14,7 +14,7 @@ public class Fibonacci {
     //Повертає число Фібоначчі за номером, нумерація почнеться з одиниці
     //якщо число не можливо вирахувати поверніть -1
     public long getNumber(int position) {
-        if (position < 1) {
+        if (position < 0) {
             return -1;
         } else {
             return fibonacci(position);
@@ -22,7 +22,11 @@ public class Fibonacci {
     }
 
     private long fibonacci(int position) {
-        if (position <= 1) return position;
-        else return fibonacci(position - 1) + fibonacci(position - 2);
+        if (position <= 1) {
+            return position;
+        }
+        else {
+            return fibonacci(position - 1) + fibonacci(position - 2);
+        }
     }
 }

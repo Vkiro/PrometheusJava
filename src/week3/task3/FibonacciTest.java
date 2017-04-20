@@ -6,6 +6,7 @@ public class FibonacciTest {
     @Test
     public void getNumber() throws Exception {
         Fibonacci f = new Fibonacci();
+        System.out.println(f.getNumber(0));
         System.out.println(f.getNumber(1));
         System.out.println(f.getNumber(2));
         System.out.println(f.getNumber(3));
