@@ -1,8 +1,5 @@
 package week3.task2;
 
-/**
- * Created by Vladik on 20.04.2017.
- */
 public class Card {
 
     private Rank rank;
