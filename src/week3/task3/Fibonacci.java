@@ -22,7 +22,7 @@ public class Fibonacci {
     }
 
     private long fibonacci(int position) {
-        if (position <= 1) {
+        if (position == 0 || position == 1) {
             return position;
         }
         else {
