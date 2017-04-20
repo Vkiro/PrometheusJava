@@ -17,16 +17,32 @@ public class Fibonacci {
         if (position < 0) {
             return -1;
         } else {
-            return fibonacci(position);
+            return fibonacciRecursion(position);
+        }
+    }
+
+    private long fibonacciRecursion(int position) {
+        if (position == 0 || position == 1) {
+            return position;
+        } else {
+            return fibonacciRecursion(position - 1) + fibonacciRecursion(position - 2);
         }
     }
 
     private long fibonacci(int position) {
-        if (position == 0 || position == 1) {
-            return position;
+        if (position <= 0) {
+            return -1;
         }
-        else {
-            return fibonacci(position - 1) + fibonacci(position - 2);
+        if (position == 1 || position == 2) {
+            return 1;
         }
+        int first = 1;
+        int second = 1;
+        for (int i = 2; i < position; i++) {
+            int tmp = first;
+            first = second;
+            second = tmp + second;
+        }
+        return second;
     }
 }
