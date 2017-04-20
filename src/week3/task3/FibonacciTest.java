@@ -2,11 +2,6 @@ package week3.task3;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
-/**
- * Created by Vladik on 20.04.2017.
- */
 public class FibonacciTest {
     @Test
     public void getNumber() throws Exception {
