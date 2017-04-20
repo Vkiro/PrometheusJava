@@ -1,6 +1,4 @@
-package week3;
-
-import static org.junit.Assert.*;
+package week3.task1;
 
 /**
  * Created by Vladik on 20.04.2017.

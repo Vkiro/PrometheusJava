@@ -1,4 +1,4 @@
-package week3;
+package week3.task1;
 
 public class Node {
     private Node next;

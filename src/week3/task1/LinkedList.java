@@ -1,4 +1,4 @@
-package week3;
+package week3.task1;
 
 /**
  * Створіть клас що описує зв'язний список.
